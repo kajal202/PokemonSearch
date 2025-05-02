@@ -1,0 +1,34 @@
+import React from "react";
+import "./PokemonCard.css"
+import { Link } from "react-router-dom";
+
+const PokemonCard = ({ pokemon, onToggleFavorite, isFavorite }) => {
+
+    // console.log(pokemon)
+    return (
+        <div className="pokemon-card">
+            <div className="pokemon-card-inner">
+
+                <Link to={`/pokemon/${pokemon.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <img src={pokemon.sprites?.front_default} alt={pokemon.name} />
+                    <h3>{pokemon.name}</h3>
+                    <p>#{pokemon.id}</p>
+                </Link>
+
+                <button onClick={() => onToggleFavorite(pokemon)}>
+                    {isFavorite ? 'Remove from Favorites' : 'Add to Favorites'}
+                </button>
+                <div className="types">
+                    {pokemon.types.map((t) => (
+                        <span key={t.type.name} className={`type ${t.type.name}`}>
+                            {t.type.name}
+                        </span>
+                    ))}
+                </div>
+
+            </div>
+        </div>
+    );
+};
+
+export default PokemonCard;
