@@ -161,4 +161,16 @@ select{
   margin-left: 1rem;
 }
 
+.random-pokemon-button button{
+
+  justify-content: right;
+  background-color: #ef5350;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
 
