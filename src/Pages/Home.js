@@ -45,6 +45,9 @@ const Home = () => {
           setSearchInput={setSearchInput}
           onSearch={() => {}}
         />
+         <div className="random-pokemon-button">
+          <RandomPokemonButton />
+        </div>
       </div>
    <br/>
      <div className= "sortFilter">
