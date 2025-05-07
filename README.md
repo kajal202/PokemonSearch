@@ -21,12 +21,12 @@ Graceful fallback UI in case a component crashes.
 
 
 🧱 Technologies Used
-React (Functional Components + Hooks)
-React Context API (Global state)
-React Router DOM (Routing)
-Custom Hooks (Data fetching abstraction)
-CSS (Custom styles)
-PokéAPI (https://pokeapi.co)
+1. React (Functional Components + Hooks)
+2. React Context API (Global state)
+3. React Router DOM (Routing)
+4. Custom Hooks (Data fetching abstraction)
+5. CSS (Custom styles)
+6. PokéAPI (https://pokeapi.co)
 
 
 Live Link: 
