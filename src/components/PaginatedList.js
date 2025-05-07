@@ -1,6 +1,6 @@
 // components/PaginatedList.jsx
 import React, { useState, useMemo, useEffect } from "react";
-import Pagination from "./Pagination";
+
 
 const PaginatedList = ({
   items,
@@ -42,11 +42,11 @@ const PaginatedList = ({
 
       {children(paginatedItems)}
 
-      <Pagination
-        currentPage={currentPage}
-        totalPages={totalPages}
-        onPageChange={setCurrentPage}
-      />
+      <div className="pagination">
+        <button onClick={() => setCurrentPage(currentPage - 1)} disabled={currentPage === 1}>Prev</button>
+        <span>{currentPage} / {totalPages}</span>
+        <button onClick={() => setCurrentPage(currentPage + 1)} disabled={currentPage === totalPages}>Next</button>
+      </div>
     </div>
   );
 };
