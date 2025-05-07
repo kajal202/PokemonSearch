@@ -1,13 +1,7 @@
 .home-page {
   margin: 30px;
-
 }
 
-.sortFilter{
-  text-align: bottom;
-  margin-bottom: 20px;
- 
-}
 .controls {
   display: flex;
   padding: 1rem;
@@ -15,38 +9,14 @@
   justify-content: center;
   margin-bottom: 2rem;
   flex-wrap: wrap;
-
 }
 
-
-
 .pokemon-grid {
-
   display: grid;
   padding-top: 20px;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1rem;
 }
-
-
-.types {
-  margin-top: 0.75rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-}
-
-.type {
-  padding: 0.25rem 0.75rem;
-  font-size: 0.75rem;
-  border-radius: 999px;
-  color: white;
-  font-weight: 500;
-  text-transform: capitalize;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
 
 .status {
   text-align: center;
@@ -58,37 +28,13 @@
   color: red;
 }
 
-/* Type Colors */
-.type.fire { background-color: #F08030; }
-.type.water { background-color: #6890F0; }
-.type.grass { background-color: #78C850; }
-.type.electric { background-color: #F8D030; }
-.type.ice { background-color: #98D8D8; }
-.type.fighting { background-color: #C03028; }
-.type.poison { background-color: #A040A0; }
-.type.ground { background-color: #E0C068; }
-.type.flying { background-color: #A890F0; }
-.type.psychic { background-color: #F85888; }
-.type.bug { background-color: #A8B820; }
-.type.rock { background-color: #B8A038; }
-.type.ghost { background-color: #705898; }
-.type.dragon { background-color: #7038F8; }
-.type.dark { background-color: #705848; }
-.type.steel { background-color: #B8B8D0; }
-.type.fairy { background-color: #EE99AC; }
-.type.normal { background-color: #A8A878; }
-
-
-
-
+/* pagination control */
 .pagination {
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin-top: 50px !important;
   grid-auto-columns: auto;
-
   flex-wrap: wrap;
 }
 
@@ -113,28 +59,25 @@
   cursor: not-allowed;
 }
 
-
-
-
-
+/* Search bar */
 .search-bar-wrapper {
   display: flex;
   gap: 0.2rem;
   align-items: stretch;
 }
 
-.search-bar {
-  padding: 0.6rem;
+ .search-bar {
   font-size: 1rem;
   width: 350px;
-  height: 100%; 
+  margin-top: 9px;
+  height: 40px !important;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
-}
+} 
 
 .search-button {
-  padding: 0.5rem 0.5rem;
+  padding: 0.6rem 1rem;
   font-size: 1rem;
   background-color: #ef5350;
   color: white;
@@ -144,13 +87,11 @@
   display: flex;
   align-items: center;  
   justify-content: center;
-}
+} 
 
-
-.search-button:hover {
+ .search-button:hover {
   background-color: #d32f2f;
-}
-
+} 
 
 select{
   padding: 0.3rem;
@@ -159,8 +100,9 @@ select{
   border-radius: 5px;
   cursor: pointer;
   margin-left: 1rem;
-}
+} 
 
+/*  Go to random pokemon details */
 .random-pokemon-button button{
 
   justify-content: right;
@@ -173,4 +115,3 @@ select{
   cursor: pointer;
   transition: background 0.3s ease;
 }
-
