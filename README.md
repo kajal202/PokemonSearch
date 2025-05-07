@@ -1,4 +1,5 @@
-🧬 Pokémon Explorer
+🧬 Pokémon Explorer  
+
 Pokémon Explorer is a modern and responsive React web application that allows users to explore Pokémon from the PokéAPI, view details, filter and sort them by type or name, add to favorites, and even pick a random Pokémon for fun!
 
 
@@ -18,6 +19,7 @@ Jump to a random Pokémon's detail page with one click.
 7. ⚠️ Error Boundary
 Graceful fallback UI in case a component crashes.
 
+
 🧱 Technologies Used
 React (Functional Components + Hooks)
 React Context API (Global state)
@@ -26,7 +28,9 @@ Custom Hooks (Data fetching abstraction)
 CSS (Custom styles)
 PokéAPI (https://pokeapi.co)
 
+
 Live Link: 
+
 
 🔧 Future Enhancements
 1. LocalStorage or backend support for persistent favorites
@@ -34,6 +38,7 @@ Live Link:
 3. Advanced filtering (e.g., by abilities, stats)
 4. Unit & integration testing (Jest + React Testing Library)
 5. PWA support for offline use
+
 
 🙌 Contribution
 Contributions are welcome! Please fork the repo and submit a pull request.
