@@ -29,7 +29,7 @@ Graceful fallback UI in case a component crashes.
 6. PokéAPI (https://pokeapi.co)
 
 
-Live Link: 
+Live Link: https://clinquant-melomakarona-983d0c.netlify.app
 
 
 🔧 Future Enhancements
